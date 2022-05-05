@@ -1,6 +1,6 @@
-from app import app
-from flask import render_template
+from flask import render_template, current_app as app
 
+# MAIN ROUTES
 @app.route('/')
 def home():
     return render_template('main/home.html')
